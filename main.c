@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*********************************************************
 
 * Programa: Trabajo Práctico 1 - Calculadora
@@ -132,5 +133,13 @@ int main()
     while ( continuar );
 
 
+=======
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world!\n");
+>>>>>>> 6ab97725c292809e87244afb9463abc8b8a008eb
     return 0;
 }
