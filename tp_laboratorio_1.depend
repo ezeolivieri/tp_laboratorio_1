@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1599683805 source:/home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"matematica.h"
+	"mostrar.h"
+	"usuariofunc.h"
+
+1599682971 /home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/matematica.h
+
+1599683170 /home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/mostrar.h
+
+1599683413 /home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/usuariofunc.h
+
+1599683030 source:/home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/matematica.c
+
+1599683217 source:/home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/mostrar.c
+
+1599683742 source:/home/ezequielo/Escritorio/UTN/Laboratorio1/tp_laboratorio_1/usuariofunc.c
+	<stdio_ext.h>
+	<ctype.h>
+
