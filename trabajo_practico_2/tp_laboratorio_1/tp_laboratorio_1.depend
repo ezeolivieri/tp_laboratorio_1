@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1601338508 source:/home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/tp_laboratorio_1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	<string.h>
+
