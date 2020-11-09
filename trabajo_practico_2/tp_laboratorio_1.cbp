@@ -31,6 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ArrayEmployees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ArrayEmployees.h" />
+		<Unit filename="Aux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Aux.h" />
+		<Unit filename="Forms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Forms.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

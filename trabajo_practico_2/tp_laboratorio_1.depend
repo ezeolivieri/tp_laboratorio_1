@@ -28,3 +28,35 @@
 	"ArrayEmployees.h"
 	"Aux.h"
 
+1601685045 source:/home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/ArrayEmployees.c
+	<string.h>
+	<stdio_ext.h>
+	"Aux.h"
+	"ArrayEmployees.h"
+
+1601684219 /home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/Aux.h
+
+1601684606 /home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/ArrayEmployees.h
+
+1601684505 source:/home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/Aux.c
+	<ctype.h>
+	<string.h>
+	<stdio_ext.h>
+
+1601684041 source:/home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/Forms.c
+	<string.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"Aux.h"
+
+1601685090 source:/home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"ArrayEmployees.h"
+	"Forms.h"
+
+1601683809 /home/ezequielo/Escritorio/tp_laboratorio_1/trabajo_practico_2/Forms.h
+
