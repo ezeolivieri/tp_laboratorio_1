@@ -86,3 +86,49 @@
 
 1604685846 /home/ezequielo/Escritorio/TP3_Cascara/Linux_64/Controller.h
 
+1606122195 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Employee.h"
+	"aux.h"
+	"Controller.h"
+
+1604685848 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/LinkedList.h
+
+1606097320 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.h
+
+1605635123 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1606121638 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	<string.h>
+
+1606121069 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1606119425 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.h
+
+1606116232 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.c
+	<ctype.h>
+	<string.h>
+	<stdio_ext.h>
+	"aux.h"
+
+1606118469 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.h
+
