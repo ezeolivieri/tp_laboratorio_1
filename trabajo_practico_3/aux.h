@@ -16,6 +16,18 @@
  */
 int aux_getEntero(int* entero, int minimo, char* mensajePedir, char* mensajeError);
 
+/** \brief Obtener un entero validando que este en el rango especificado
+ *
+ * \param entero int*
+ * \param minimo int
+ * \param maximo int
+ * \param mensajePedir char*
+ * \param mensajeError char*
+ * \return int Entero que indica si hubo errores.
+ *
+ */
+int aux_getEnteroEntre(int* entero, int minimo, int maximo, char* mensajePedir, char* mensajeError);
+
 /** \brief Obtener un char (S/N) de confirmacion
  *
  * \param mensajePedir char*

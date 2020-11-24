@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Employee.h"
 #include <string.h>
+#include "Employee.h"
 
 Employee* employee_new()
 {
@@ -190,4 +190,100 @@ int printEmployee(Employee* pEmployee)
     }
 
     return todoOk;
+}
+
+int emp_sortByNombre(void* empUno,void* empDos)
+{
+    char nameUnoAux[128];
+    char nameDosAux[128];
+
+    if( empUno != NULL && empDos != NULL )
+    {
+        employee_getNombre((Employee*) empUno,nameUnoAux);
+        employee_getNombre((Employee*) empDos,nameDosAux);
+
+        if( strcmp(nameUnoAux, nameDosAux) > 0 )
+        {
+            return 1;
+        }
+        else
+        {
+            return -1;
+        }
+    }
+
+    return 0;
+}
+
+int emp_sortById(void* empUno,void* empDos)
+{
+    int idUnoAux;
+    int idDosAux;
+
+    if( empUno != NULL && empDos != NULL )
+    {
+        employee_getId((Employee*) empUno,&idUnoAux);
+        employee_getId((Employee*) empDos,&idDosAux);
+
+        if( idUnoAux > idDosAux )
+        {
+            return 1;
+        }
+
+        if( idUnoAux < idDosAux )
+        {
+            return -1;
+        }
+    }
+
+    return 0;
+}
+
+int emp_sortBySueldo(void* empUno,void* empDos)
+{
+    int salarioUnoAux;
+    int salarioDosAux;
+
+    if( empUno != NULL && empDos != NULL )
+    {
+        employee_getSueldo((Employee*) empUno,&salarioUnoAux);
+        employee_getSueldo((Employee*) empDos,&salarioDosAux);
+
+        if( salarioUnoAux > salarioDosAux )
+        {
+            return 1;
+        }
+
+        if( salarioUnoAux < salarioDosAux )
+        {
+            return -1;
+        }
+    }
+
+    return 0;
+}
+
+int emp_sortByHorasTrabajadas(void* empUno,void* empDos)
+{
+    int horasUnoAux;
+    int horasDosAux;
+
+    if( empUno != NULL && empDos != NULL )
+    {
+        employee_getHorasTrabajadas((Employee*) empUno,&horasUnoAux);
+        employee_getHorasTrabajadas((Employee*) empDos,&horasDosAux);
+
+        if( horasUnoAux > horasDosAux )
+        {
+            return 1;
+        }
+
+        if( horasUnoAux < horasDosAux )
+        {
+            return -1;
+        }
+    }
+
+
+    return 0;
 }

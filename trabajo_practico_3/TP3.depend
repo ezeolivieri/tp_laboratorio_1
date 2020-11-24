@@ -86,7 +86,7 @@
 
 1604685846 /home/ezequielo/Escritorio/TP3_Cascara/Linux_64/Controller.h
 
-1606122195 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.c
+1606175803 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.c
 	<stdio.h>
 	<stdio_ext.h>
 	<stdlib.h>
@@ -99,7 +99,7 @@
 
 1604685848 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/LinkedList.h
 
-1606097320 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.h
+1606173829 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.h
 
 1605635123 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/parser.c
 	<stdio.h>
@@ -107,13 +107,13 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1606121638 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.c
+1606175072 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Employee.c
 	<stdio.h>
 	<stdlib.h>
-	"Employee.h"
 	<string.h>
+	"Employee.h"
 
-1606121069 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/main.c
+1606122604 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/main.c
 	<stdio.h>
 	<stdlib.h>
 	<stdio_ext.h>
@@ -122,13 +122,13 @@
 	"Controller.h"
 	"Employee.h"
 
-1606119425 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.h
+1606122737 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/Controller.h
 
-1606116232 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.c
+1606172613 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.c
 	<ctype.h>
 	<string.h>
 	<stdio_ext.h>
 	"aux.h"
 
-1606118469 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.h
+1606172692 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_3/aux.h
 

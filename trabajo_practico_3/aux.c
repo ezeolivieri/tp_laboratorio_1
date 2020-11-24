@@ -24,6 +24,27 @@ int aux_getEntero(int* entero, int minimo, char* mensajePedir, char* mensajeErro
     return todoOk;
 }
 
+int aux_getEnteroEntre(int* entero, int minimo, int maximo, char* mensajePedir, char* mensajeError)
+{
+    int todoOk = 0;
+
+    if( entero != NULL && mensajePedir != NULL && mensajeError != NULL )
+    {
+        printf("\n%s", mensajePedir);
+        scanf("%d", entero);
+
+        while( !( *entero >= minimo && *entero <= maximo) )
+        {
+            printf("\n%s", mensajeError);
+            scanf("%d", entero);
+        }
+
+        todoOk = 1;
+    }
+
+    return todoOk;
+}
+
 char aux_getConfirmacion(char* mensajePedir, char* mensajeError)
 {
     char confirmar;

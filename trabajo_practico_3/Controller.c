@@ -348,7 +348,78 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_sortEmployee(LinkedList* pArrayListEmployee)
 {
-    return 1;
+    int retorno = -1;
+    int respuesta;
+    int criterio;
+
+    if( pArrayListEmployee != NULL )
+    {
+        printf("\n\n");
+        printf("    ###################################################\n");
+        printf("    ################ Ordenar Empleados ################\n");
+        printf("    ###################################################\n\n");
+
+        printf("           ====== CAMPOS =======\n");
+        printf("1- ID\n");
+        printf("2- Horas de Trabajo\n");
+        printf("3- Nombre\n");
+        printf("4- Sueldo\n");
+        printf("5- Volver al menu principal\n");
+
+        aux_getEnteroEntre(&respuesta, 1, 5, "Respuesta: ", "Error. ingrese una opcion valida: ");
+        aux_getEnteroEntre(&criterio, 0, 1, "Criterio? 0 - Ascendente / 1 - Descendente: ", "Error. ingrese una opcion valida: ");
+
+        switch(respuesta)
+        {
+            case 1:
+                if( !ll_sort(pArrayListEmployee,emp_sortById,criterio) )
+                {
+                    printf("Ordenado con exito!\n");
+                }
+                else
+                {
+                    printf("\n\nOcurrio un error al intentar ordenar.\n");
+                }
+                break;
+
+            case 2:
+                if( !ll_sort(pArrayListEmployee,emp_sortByHorasTrabajadas,criterio) )
+                {
+                    printf("\n\nOrdenado con exito!\n");
+                }
+                else
+                {
+                    printf("\n\nOcurrio un error al intentar ordenar.\n");
+                }
+                break;
+
+            case 3:
+                if( !ll_sort(pArrayListEmployee,emp_sortByNombre,criterio) )
+                {
+                    printf("Ordenado con exito!\n");
+                }
+                else
+                {
+                    printf("\n\nOcurrio un error al intentar ordenar.\n");
+                }
+                break;
+
+            case 4:
+                if( !ll_sort(pArrayListEmployee,emp_sortBySueldo,criterio) )
+                {
+                    printf("Ordenado con exito!\n");
+                }
+                else
+                {
+                    printf("\n\nOcurrio un error al intentar ordenar.\n");
+                }
+                break;
+        }
+
+        retorno = 0;
+    }
+
+    return retorno;
 }
 
 /** \brief Guarda los datos de los empleados en el archivo data.csv (modo texto).
