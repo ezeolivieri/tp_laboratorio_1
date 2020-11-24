@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1606231383 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/aux.c
+	<ctype.h>
+	<string.h>
+	<stdio_ext.h>
+	"aux.h"
+
+1606231399 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/aux.h
+
+1606233423 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"LinkedList.h"
+	"Developer.h"
+	"aux.h"
+	"Controller.h"
+
+1606233586 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/LinkedList.h
+
+1606230869 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.h
+
+1606241938 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.h
+
+1606230830 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Developer.h"
+
+1606233626 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1606233117 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Developer.h"
+	"Controller.h"
+	"aux.h"
+
