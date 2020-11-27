@@ -1,8 +1,10 @@
+int controller_loadFromText(char* path , LinkedList* pArrayListDeveloper);
 int controller_addDeveloper(LinkedList* pArrayListDeveloper,int id);
 int controller_editDeveloper(LinkedList* pArrayListDeveloper);
 int controller_removeDeveloper(LinkedList* pArrayListDeveloper);
 int controller_ListDeveloper(LinkedList* pArrayListDeveloper);
 int controller_sortDeveloper(LinkedList* pArrayListDeveloper);
+int controller_saveAsText(char* path , LinkedList* pArrayListDeveloper);
 
 /** \brief Encuentra un empleado por su ID
  *

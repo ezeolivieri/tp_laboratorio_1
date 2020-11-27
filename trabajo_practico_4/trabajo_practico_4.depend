@@ -7,7 +7,7 @@
 
 1606231399 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/aux.h
 
-1606233423 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.c
+1606499123 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.c
 	<stdio.h>
 	<stdio_ext.h>
 	<stdlib.h>
@@ -20,11 +20,11 @@
 
 1606233586 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/LinkedList.h
 
-1606230869 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.h
+1606498251 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.h
 
-1606241938 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.h
+1606497623 /home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Controller.h
 
-1606230830 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.c
+1606498232 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/Developer.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -36,7 +36,7 @@
 	<string.h>
 	"LinkedList.h"
 
-1606233117 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/main.c
+1606503329 source:/home/ezequielo/Escritorio/Prog-Labo1 - UTN/tp_laboratorio_1/trabajo_practico_4/main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"

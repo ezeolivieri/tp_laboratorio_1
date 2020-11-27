@@ -9,6 +9,48 @@
 #include "Controller.h"
 
 
+int controller_loadFromText(char* path , LinkedList* pArrayListDeveloper)
+{
+    int retorno = -1;
+    char idAux[900];
+    char nameAux[900];
+    char horasTrabajadasAux[900];
+    char sueldoAux[900];
+    FILE* fpArchivo;
+    Developer* devAux = NULL;
+
+    if( pArrayListDeveloper != NULL && path != NULL)
+    {
+        fpArchivo = fopen(path, "r");
+
+        if( fpArchivo != NULL )
+        {
+            do
+            {
+                if( fscanf(fpArchivo, "%[^,],%[^,],%[^,],%[^\n]\n", idAux, nameAux, horasTrabajadasAux, sueldoAux) == 4 )
+                {
+                    devAux = developer_newParametrosChar(idAux, nameAux, horasTrabajadasAux, sueldoAux);
+
+                    if( devAux != NULL )
+                    {
+                        ll_add(pArrayListDeveloper, devAux);
+                    }
+                }
+            }
+            while( !feof(fpArchivo) );
+
+            fclose(fpArchivo);
+            retorno = 0;
+        }
+        else
+        {
+            printf("\n\nERROR INTENTANDO ABRIR EL ARCHIVO.\n\n");
+        }
+    }
+
+    return retorno;
+}
+
 /** \brief Alta de desarrolladores
  *
  * \param path char*
@@ -69,6 +111,7 @@ int controller_editDeveloper(LinkedList* pArrayListDeveloper)
     char confirmar;
     char nameAux[100];
     Developer* pDesarrolladorAux = NULL;
+    Developer* pModifyDev = NULL;
 
     if( pArrayListDeveloper != NULL )
     {
@@ -88,6 +131,11 @@ int controller_editDeveloper(LinkedList* pArrayListDeveloper)
         else
         {
             pDesarrolladorAux = (Developer*) ll_get(pArrayListDeveloper, indiceAux);
+
+            developer_getNombre(pDesarrolladorAux, nameAux);
+            developer_getHorasTrabajadas(pDesarrolladorAux, &horasTrabajadasAux);
+            developer_getSueldo(pDesarrolladorAux, &sueldoAux);
+
             printf("\n  #####  DESARROLLADOR A MODIFICAR  #####  \n");
             printDeveloper(pDesarrolladorAux);
 
@@ -100,8 +148,13 @@ int controller_editDeveloper(LinkedList* pArrayListDeveloper)
                     confirmar = aux_getConfirmacion("Confirma la modificacion? s - si / n - no: ", "\nERROR. Escriba una opcion valida: ");
                     if( confirmar == 'S' )
                     {
-                        strcpy(pDesarrolladorAux->nombre, nameAux);
-                        printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        pModifyDev = developer_newParametros(idAux, nameAux, horasTrabajadasAux, sueldoAux);
+
+                        if( pModifyDev != NULL )
+                        {
+                            ll_set( pArrayListDeveloper, ll_indexOf(pArrayListDeveloper, pDesarrolladorAux), pModifyDev);
+                            printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        }
                     }
                     else
                     {
@@ -114,8 +167,13 @@ int controller_editDeveloper(LinkedList* pArrayListDeveloper)
                     confirmar = aux_getConfirmacion("Confirma la modificacion? s - si / n - no: ", "\nERROR. Escriba una opcion valida: ");
                     if( confirmar == 'S' )
                     {
-                        pDesarrolladorAux->horasTrabajadas = horasTrabajadasAux;
-                        printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        pModifyDev = developer_newParametros(idAux, nameAux, horasTrabajadasAux, sueldoAux);
+
+                        if( pModifyDev != NULL )
+                        {
+                            ll_set( pArrayListDeveloper, ll_indexOf(pArrayListDeveloper, pDesarrolladorAux), pModifyDev);
+                            printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        }
                     }
                     else
                     {
@@ -128,8 +186,13 @@ int controller_editDeveloper(LinkedList* pArrayListDeveloper)
                     confirmar = aux_getConfirmacion("Confirma la modificacion? s - si / n - no: ", "\nERROR. Escriba una opcion valida: ");
                     if( confirmar == 'S' )
                     {
-                        pDesarrolladorAux->sueldo = sueldoAux;
-                        printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        pModifyDev = developer_newParametros(idAux, nameAux, horasTrabajadasAux, sueldoAux);
+
+                        if( pModifyDev != NULL )
+                        {
+                            ll_set( pArrayListDeveloper, ll_indexOf(pArrayListDeveloper, pDesarrolladorAux), pModifyDev);
+                            printf("\n\n##### Edicion realizada con exito. #####\n\n");
+                        }
                     }
                     else
                     {
@@ -321,6 +384,47 @@ int controller_sortDeveloper(LinkedList* pArrayListDeveloper)
         }
 
         retorno = 0;
+    }
+
+    return retorno;
+}
+
+int controller_saveAsText(char* path , LinkedList* pArrayListDeveloper)
+{
+    int retorno = -1;
+    FILE* fpArchivo;
+    int arrayLen = ll_len(pArrayListDeveloper);
+    Developer* pDeveloperAux = NULL;
+    int idAux;
+    char nameAux[128];
+    int horasTrabajadasAux;
+    int sueldoAux;
+
+    if( pArrayListDeveloper != NULL && path != NULL)
+    {
+        fpArchivo = fopen(path, "w");
+
+        if( fpArchivo != NULL )
+        {
+            for( int i=0; i < arrayLen; i++ )
+            {
+                pDeveloperAux = (Developer*) ll_get(pArrayListDeveloper, i);
+
+                if( pDeveloperAux != NULL )
+                {
+                    if(!( developer_getId(pDeveloperAux, &idAux) &&
+                          developer_getNombre(pDeveloperAux, nameAux) &&
+                          developer_getHorasTrabajadas(pDeveloperAux, &horasTrabajadasAux) &&
+                          developer_getSueldo(pDeveloperAux, &sueldoAux) ) )
+                    {
+                        fprintf(fpArchivo, "%d,%s,%d,%d\n", idAux, nameAux, horasTrabajadasAux, sueldoAux);
+                    }
+                }
+            }
+
+            fclose(fpArchivo);
+            retorno = 0;
+        }
     }
 
     return retorno;

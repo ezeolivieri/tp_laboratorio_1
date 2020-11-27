@@ -41,6 +41,29 @@ Developer* developer_newParametros(int id,char* nombre,int horasTrabajadas,int s
     return nuevoDev;
 }
 
+Developer* developer_newParametrosChar(char* id,char* nombre,char* horasTrabajadas,char* sueldo)
+{
+    Developer* nuevoDev = developer_new();
+
+    if( nuevoDev != NULL )
+    {
+        if( !( developer_setId(nuevoDev, atoi(id))
+            && developer_setNombre(nuevoDev, nombre)
+            && developer_setHorasTrabajadas(nuevoDev, atoi(horasTrabajadas))
+            && developer_setSueldo(nuevoDev, atoi(sueldo)) ) )
+        {
+            developer_delete(nuevoDev);
+        }
+
+        developer_setId(nuevoDev, atoi(id));
+        developer_setNombre(nuevoDev, nombre);
+        developer_setHorasTrabajadas(nuevoDev, atoi(horasTrabajadas));
+        developer_setSueldo(nuevoDev, atoi(sueldo));
+    }
+
+    return nuevoDev;
+}
+
 void developer_delete(Developer* this)
 {
     free( this );

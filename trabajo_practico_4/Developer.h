@@ -11,6 +11,7 @@ typedef struct
 
 Developer* developer_new();
 Developer* developer_newParametros(int id,char* nombre,int horasTrabajadas,int sueldo);
+Developer* developer_newParametrosChar(char* id,char* nombre,char* horasTrabajadas,char* sueldo);
 void developer_delete(Developer* this);
 
 int developer_setId(Developer* this,int id);
